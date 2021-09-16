@@ -1,0 +1,56 @@
+2021.9.9
+    1、在隔离环境过一遍联报的新增，编辑，列表
+    2、排查promotion-task内存过高的情况
+        相关文档：
+        http://codefun007.xyz/a/article_detail/397.htm
+        https://blog.csdn.net/wangpeng1201/article/details/116779531?utm_medium=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link
+    3、拼团补偿逻辑 时间间隔先改回来 done
+    4、帮万海合下代码到主分支  done
+
+2021.9.10
+    1、course-setting更改 品类集合
+    2、品类integer
+
+2021.9.11
+    1、更改了品类字段类型
+    2、学习了es相关内容
+
+   es总结：
+
+   	1、初始化
+   	put /index/type/_doc
+   	2、插入数据
+   	post /index/type
+   	{json}
+   	3、删除
+   	delete
+   	4、语法
+   	match/match_all 都是包含匹配
+   	match_phrase 精准匹配
+   	bool 多条件查询
+   		must 相当于 and
+   		shoule 相当于or
+   	aggs 聚合
+
+2021.9.13
+    1、完成联报的p0并 showcase
+    2、联报改动的 apollo配置项梳理
+    3、给订单提供的接口梳理
+
+    后端隔离：班课930-(courseSetting+boss+分班+师资鉴权)
+    前端隔离：isolute-feat-clazz-course-merge-fe
+
+    联报上线注意事项：
+        1、course.redis.switch 开关先关掉 10分钟
+        2、刷es, k12没有bizType
+        3、
+
+2021.9.14
+    1、promotion-task  rocketMq问题排查
+    2、鉴权了解下
+    3、给订单提供的接口自测下
+
+2021.9.16
+    1、github看mq源码
+    2、mq的 group沉淀一份wiki
+    3、api中缓存activity 缓存更新检查

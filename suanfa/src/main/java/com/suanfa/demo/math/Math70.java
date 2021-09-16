@@ -1,0 +1,26 @@
+package com.suanfa.demo.math;
+
+/**
+ * Description
+ * Create by 汪迎春
+ * Date 2021/7/30 3:02 下午
+ */
+public class Math70 {
+    public static void main(String[] args) {
+        System.out.println(climbStairs(3));
+    }
+
+    public static int climbStairs(int n) {
+        if (n <= 2) {
+            return n;
+        }
+
+        int[] dp = new int[n];
+        dp[0] = 1;
+        dp[1] = 2;
+        for (int i = 2; i < n; i++) {
+            dp[i] = dp[i - 2] + dp[i - 1];
+        }
+        return dp[n - 1];
+    }
+}
