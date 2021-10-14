@@ -1,0 +1,9 @@
+1、@permissionTag鉴权
+    实现思路：
+    a).getAuth接口获取到所有的权限tag
+    b).切面获取注解的value
+    c).filter所有的tag,是否包含注解的value,从而控制是否能进去接口
+
+
+2、数据迁移
+

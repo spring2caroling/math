@@ -25,15 +25,20 @@ import sun.java2d.xr.MutableInteger;
  */
 public class Test implements Remote {
     public static void main(String[] args) {
-        System.out.println("hhhhhhhhhhhhhh");
+        test2();
+//        test();
+    }
 
+    public static void test() {
+        synchronized (Test.class) {
+            System.out.println("hhhh");
+            Thread.currentThread().notify();
+        }
+    }
 
-        Runtime.getRuntime().addShutdownHook(new Thread(
-                () -> System.out.println("我清理了 系统关系需要关闭的资源")
-        ));
-
-        Thread.currentThread().setDaemon(true);
-        
+    public static void test2() {
+        System.out.println("hhhhh");
+        Thread.currentThread().notifyAll();
     }
 
 

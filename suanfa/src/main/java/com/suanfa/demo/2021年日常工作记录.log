@@ -54,3 +54,56 @@
     1、github看mq源码
     2、mq的 group沉淀一份wiki
     3、api中缓存activity 缓存更新检查
+
+2021.9.18
+
+    gaotu-coupon-a-task  done
+    gaotu-coupon-c-task done
+    gaotu-coupon-management-task done
+    gaotu-promotion-task done
+    gaotu-promotion-management done
+    gaotu-market
+
+
+2021.9.23
+
+    1、总目标：成本控制
+
+    2、方法：服务缩容或者降配
+    	2.1 判断
+    	2.2 缩容、降配流程
+    	2.3 补救措施
+    	2.4 定时扩缩容
+    	2.5 服务优化，eg：task计算任务可以走阿里云后台
+
+    3、服务docker化
+
+
+    4、相关wiki
+    https://wiki.baijia.com/pages/viewpage.action?pageId=110629755
+    https://wiki.baijia.com/pages/viewpage.action?pageId=120195691
+
+2021.9.26
+
+    1、下线机器不能用于克隆，这个加到wiki里
+
+    操作系统导论
+
+
+2021.10.9
+
+    1、期提供大麦接口开发
+    2、期接口鉴权
+
+
+2021.10.13
+    1、支持期联调
+    2、完成成本控制第一阶段
+    3、数据迁移了解
+    4、网络
+
+
+2021.10.14
+    1、成本控制
+    2、万海说的昨晚定时扩缩容导致的问题
+    3、关注期开发 支持期测试
